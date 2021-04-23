@@ -10,8 +10,8 @@ class Node:
         self.right = right_node
 
 class KDTree:
-    def __init__(self, dims):
-        self.dims = dims
+    def __init__(self, dimensions):
+        self.dims = dimensions
 
     def __insert(self, point, node, sDim):
         if node is None:
