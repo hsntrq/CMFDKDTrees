@@ -1,71 +1,76 @@
-import warnings
+import math
 
-class Node:
-    """A binary-tree node class to store 2d-points"""
+class KdTree:
+    def __init__(self, points, k) -> None:
+        self.depth = 0
+        self.k = k
+        self.tree = self.KdBuild(points, self.depth)
+    
+    def displayTree(self):
+        print(self.tree)
 
-    def __init__(self, point, left_node=None, right_node=None):
-        self.point = point
-        self.dims = len(self.point)
-        self.left = left_node
-        self.right = right_node
 
-class KDTree:
-    def __init__(self, dimensions):
-        self.dims = dimensions
-
-    def __insert(self, point, node, sDim):
-        if node is None:
-            node = Node(point)
+    def KdBuild(self, points, depth = 0):
+        self.depth = depth
+        n = len(points)
+        if n<=0:
+            return None
         else:
-            if point[sDim] < node.point[sDim]:
-                node.left = self.__insert(point, node.left,
-                        (sDim + 1) % self.dims)
-            elif point[sDim] > node.point[sDim]:
-                node.right = self.__insert(point, node.right,
-                        (sDim + 1) % self.dims)
-            else:
-                warnings.warn('Duplicate point {}. Ignored.'.format(point))
-        return node
+            axis = depth % self.k #current dimension in the Kd Tree traversal 
+            pointSorted = sorted(points, key = lambda point: point[axis])
+            
 
-    def __traverse_inorder(self, node):
+            return {
+                'Node' : pointSorted[n//2],
+                'axis' : axis,
+                'left' : self.KdBuild(pointSorted[:n//2], depth + 1),
+                'right' : self.KdBuild(pointSorted[(n//2)+1:], depth + 1),
+                
+            }
 
-        if node is not None:
-            n_list = []
-            n_list.extend(self.__traverse_inorder(node.left))
-            n_list.append(node.point)
-            n_list.extend(self.__traverse_inorder(node.right))
-            return n_list
+    def distance(self, p1, p2):
+        sum = 0
+        n = len(p1)-1
+        for i in range(n):
+            sum+= ((p1[i]- p2[i])**2)
+        return math.sqrt(sum)
+    
+    def nearerDistance(self, point, p1, p2):
+        if p1 is None or point==p1:
+            return p2
+        if p2 is None or point==p2:
+            return p1
+        
+        d1 = self.distance(point, p1)
+        d2 = self.distance(point, p2)
+
+        if d1<d2:
+            return p1
         else:
-            return []
+            return p2 
+        
+    
+    def nearestNeigbour(self, point, rootTree = {}):
+        if rootTree=={}:
+            rootTree = self.tree
 
-    def __print_tree(self, node, sign=''):
-        if node is not None:
-            print(sign, node.point)
-            self.__print_tree(node.left, sign + '-')
-            self.__print_tree(node.right, sign + '+')
+        if rootTree is None:
+            return None
+        currAxis = rootTree['axis']
+        nextSubtree = None
+        oppSubtree = None
 
-    def insert(self, point):
-        try:
-            self.root = self.__insert(point, self.root, 0)
-        except AttributeError:
-            self.root = self.__insert(point, None, 0)
+        if point[currAxis] > rootTree['Node'][currAxis]:
+            nextSubtree = rootTree['right']
+            oppSubtree = rootTree['left']
+        else:
+            nextSubtree = rootTree['left']
+            oppSubtree = rootTree['right']
+        
+        bestPoint = self.nearerDistance(point, self.nearestNeigbour(point, nextSubtree), rootTree['Node'])
 
-    def traverse_inorder(self):
-        n_list = self.__traverse_inorder(self.root)
-        return n_list
+        if self.distance(bestPoint, point) > abs(point[currAxis] - rootTree['Node'][currAxis]):
+            bestPoint = self.nearerDistance(point, self.nearestNeigbour(point, oppSubtree), bestPoint)
+        
+        return bestPoint
 
-    def print_tree(self):
-        """Prints the tree in pre-order """
-        try:
-            self.__print_tree(self.root)
-        except AttributeError:
-            print('Empty tree !!')
-kdTree = KDTree(2)
-kdTree.insert((8, 6))
-kdTree.insert((10, 1))
-kdTree.insert((5, 8))
-kdTree.insert((9, 7))
-kdTree.insert((3, 3))
-kdTree.insert((9, 0))
-actual_list = kdTree.traverse_inorder()
-print(actual_list)
