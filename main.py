@@ -3,9 +3,9 @@ from PIL import Image, ImageOps
 from kdTrees import *
 # import concurrent.futures
 import time
-input_image = Image.open("./Image Data Set/29/29.png")
+input_image = Image.open("./Image Data Set/36/36.png")
 inputMatrix = input_image.load()
-gray_image = Image.open("./Image Data Set/29/29.png").convert('L')
+gray_image = Image.open("./Image Data Set/36/36.png").convert('L')
 outputMap = Image.new(gray_image.mode, gray_image.size)
 outputMatrix = outputMap.load()
 # testImage = Image.new(input_image.mode, input_image.size)
@@ -14,9 +14,9 @@ imageMatrix = gray_image.load()
 width, height = gray_image.size
 featuresList = []
 #                           Constants
-nblock  = 8
+nblock  = 11
 tm = 0.001
-alpha = 7
+alpha = 9
 t1 = time.perf_counter()
 # Block traversal
 nblock = (nblock//3)*3
@@ -52,8 +52,8 @@ for block in featuresList:
             if rdiff > alpha or gdiff > alpha or bdiff > alpha :
                 cf += 1
     if cf <= (nblock**2)*tm:
-        for i in range(nblock//3, (2*nblock//3)):
-            for j in range(nblock//3, (2*nblock//3)):
+        for i in range(0, (1*nblock)):
+            for j in range(0, (1*nblock)):
                 outputMatrix[block[9][0] + i, block[9][1] + j] = 110
                 outputMatrix[nearestBlock[9][0] + i, nearestBlock[9][1] + j] = 255
         # testImage.show()
