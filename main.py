@@ -48,4 +48,5 @@ def detectForgery(path, name, nblock, tm, alpha):
             featuresList.remove(block)
     outputPath = "/media/output/" + name
     outputMap.save(outputPath, "PNG")
+    return outputPath
 # outputMap.show()
