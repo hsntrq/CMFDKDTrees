@@ -50,4 +50,4 @@ def detectForgery(path, name, nblock, tm, alpha):
     outputMap.save(outputPath, "PNG")
     outputMap.show()
     return outputPath
-detectForgery(path = "Image Data Set/37/", name = "37.png", alpha = 10, nblock = 15, tm = 0.1)
+detectForgery(path = "Image Data Set/37/", name = "37.png", alpha = 15, nblock = 9, tm = 0.001)

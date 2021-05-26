@@ -12,8 +12,6 @@ def detectForgery(path, name, nblock, tm, alpha):
     imageMatrix = gray_image.load()
     width, height = gray_image.size
     featuresList = []
-    # t1 = time.perf_counter()
-    # Block traversal
     nblock = (nblock//3)*3
     for i in range (0, width-nblock, nblock//3):
         for j in range(0, height-nblock, nblock//3):
@@ -28,8 +26,6 @@ def detectForgery(path, name, nblock, tm, alpha):
             pixelInt.append((i,j))
             featuresList.append(pixelInt)
     kd_tree = KdTree(points = featuresList, k = 9)
-    #kd_tree.displayTree()
-    # t1 = time.perf_counter()
     for block in featuresList:
         cf = 0
         nearestBlock = kd_tree.nearestNeigbour(point = block)
@@ -50,4 +46,4 @@ def detectForgery(path, name, nblock, tm, alpha):
     outputMap.save(outputPath, "PNG")
     outputMap.show()
     return outputPath
-detectForgery(path = "Image Data Set/37/", name = "37.png", alpha = 10, nblock = 15, tm = 0.1)
+# detectForgery(path = "Image Data Set/37/", name = "37.png", alpha = 15, nblock = 8, tm = 0.1)
