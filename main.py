@@ -3,10 +3,11 @@ from PIL import Image
 from kdTrees import *
 # import concurrent.futures
 # import time
-def detectForgery(path, name, nblock, tm, alpha):
-    input_image = Image.open(path + "/" + name)
+def detectForgery(path, nblock, tm, alpha):
+    path = 'media//'+str(path)
+    input_image = Image.open(path)
     inputMatrix = input_image.load()
-    gray_image = Image.open(path + "/" + name).convert('L')
+    gray_image = Image.open(path).convert('L')
     outputMap = Image.new(gray_image.mode, gray_image.size)
     outputMatrix = outputMap.load()
     imageMatrix = gray_image.load()
@@ -42,8 +43,7 @@ def detectForgery(path, name, nblock, tm, alpha):
                     outputMatrix[block[9][0] + i, block[9][1] + j] = 110
                     outputMatrix[nearestBlock[9][0] + i, nearestBlock[9][1] + j] = 255
             featuresList.remove(block)
-    outputPath = path + "output/" + name
+    outputPath = path.replace('input', 'output')
     outputMap.save(outputPath, "PNG")
-    outputMap.show()
-    return outputPath
+    return outputPath[6:]
 # detectForgery(path = "Image Data Set/37/", name = "37.png", alpha = 15, nblock = 8, tm = 0.1)
