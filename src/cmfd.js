@@ -144,7 +144,7 @@ export default class Cmfd extends Component {
         </div>
         <p style={{ textAlign: "center", margin: "20px 0", fontSize: "21px" }}>
           Your image is being processed to detect the forgery. Please wait for a
-          few seconds while we process your image.
+          few moments while we process your image.
         </p>
       </div>
     );
