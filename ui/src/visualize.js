@@ -8,48 +8,27 @@ export default class Visualize extends Component {
           <section className="portfolio-block contact">
             <div className="container">
               <h1>More About KD Trees:</h1>
-              <p>KD Trees are a type of Data structure etc etc..</p>
-            </div>
-          </section>
-          <section>
-            <div className="container">
-              <h1>Visualize KD Tree below:</h1>
-              <div className="row">
-                <div className="col-sm-12 col-lg-6">
-                  <div className="card border-0">
-                    <div className="card-body">
-                      <h6>
-                        <a href="#">Picture 1</a>
-                      </h6>
-                      <div className="row">
-                        <div className="col-6">
-                          <a href="#"></a>
-                        </div>
-                        <div className="col-6">
-                          <a href="#"></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-sm-12 col-lg-6">
-                  <div className="card border-0">
-                    <div className="card-body">
-                      <h6>
-                        <a href="#">Picture 2</a>
-                      </h6>
-                      <div className="row">
-                        <div className="col-6">
-                          <a href="#"></a>
-                        </div>
-                        <div className="col-6">
-                          <a href="#"></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <p>
+                Using a KD-Tree we can consider K-dimensional feature vectors as
+                coordinates in K-Dimensional space. A KD-Tree partitions this KD
+                space based on the points input into it. In terms of
+                implementation, we input tuples of feature vectors into a binary
+                tree, where each level is designated a dimension, e.g. in 2d
+                trees, first level is x, second is y, and third again is x, and
+                so on. The points at each level partition the space in the axis
+                of the dimension of the level.
+              </p>
+              <h1>Balancing KD Trees and Complexity:</h1>
+              <p>
+                To get balanced trees, use the median coordinate for splitting -
+                median itself can be put in either half or Presort points by x
+                and y-coordinates, and cross-link these two sorted lists With
+                median splitting, the height of the tree guaranteed to be O(log
+                n). Inserting a new point into a balanced k-d tree takes O(log
+                n) time. Removing a point from a balanced k-d tree takes O(log
+                n) time. Finding 1 nearest neighbor in a balanced k-d tree with
+                randomly distributed points takes O(log n) time on average.
+              </p>
             </div>
           </section>
         </main>

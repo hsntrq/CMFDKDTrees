@@ -12,12 +12,12 @@ export default class Home extends Component {
             >
               <h1 className="hero-title">KD Trees</h1>
               <p className="hero-subtitle">
-                Nullam id dolor id nibh ultricies vehicula ut id elit. Cras
-                justo odio, dapibus ac facilisis in, egestas eget quam.
+                <i>“The purpose of software engineering is to control complexity,
+                not to create it.”</i> ― Jon L. Bentley, Inventor of KD-Trees
               </p>
               <p></p>
               <a className="btn btn-primary" role="button" href="/visualize">
-                Visualize KD Tree Now
+                Learn More
               </a>
             </div>
           </section>
@@ -67,10 +67,22 @@ export default class Home extends Component {
                 <div className="col-sm-12 col-lg-8">
                   <div className="card border-0"></div>
                   <p>
-                    The algorithm uses KD Trees to detect the forgery in the
-                    image your upload. It will generate and provide you with an
-                    output image having the forgery detected in it. You can
-                    access the tool by clicking below:
+                    Forgery has been a major security issue since before
+                    computers even existed. In the digital age, however, with
+                    editing softwares becoming more and more sophisticated, the
+                    act of forgery has become less and less identifiable. From
+                    fake news and memes, to mass propaganda and false evidence:
+                    it affects both the individual, and the masses.
+                  </p>
+                  <p>
+                    Copy move forgery is one such form of forgery, where
+                    essentially a part of the image is copy pasted into the same
+                    image in a way that it looks natural to the human eye. The
+                    aim of this tool is to identify and highlight this copy
+                    pasted portion to help us distinguish fake from the
+                    original. In this ever evolving cyber era, this will prove
+                    to be a great tool to ensure honesty and originality of
+                    media.
                   </p>
                   <a
                     className="btn btn-primary btn-lg"
@@ -191,9 +203,12 @@ export default class Home extends Component {
                 <h2>Generative Art Using KD Trees</h2>
               </div>
               <div>
-                <p>
-                  The output pictures of the images that are saved in our
-                  library.
+                <p style={{ textAlign: "center" }}>
+                  <i>
+                    "Art is the imposing of a pattern on experience, and our
+                    aesthetic enjoyment is recognition of the pattern"{" "}
+                  </i>
+                  - Alfred North Whitehead
                 </p>
               </div>
               <div className="row" style={{ margin: "30px 0px" }}>
@@ -247,7 +262,7 @@ export default class Home extends Component {
                     className="btn btn-primary btn-lg"
                     role="button"
                     style={{ margin: "20px" }}
-                    href="/visualize"
+                    href="/generativeArt"
                   >
                     View more
                   </a>
