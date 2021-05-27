@@ -27,10 +27,11 @@ export default class Cmfd extends Component {
         }
       }
       postData(e) {
-        alert('You are about to submit the image to apply forgery detection on it!');
+        // alert('You are about to submit the image to apply forgery detection on it!');
         e.preventDefault();
         const data = new FormData(e.target);
-        fetch("/api/submit", {
+        console.log("error!");
+        fetch("http://127.0.0.1:8000/api/submit/", {
           method: "POST",
           body: data,
           encType: "multipart/form-data",
@@ -56,7 +57,7 @@ export default class Cmfd extends Component {
         </p>
         <div className="row gallery">
           <div className="col" style={{ margin: "0 10%" }}>
-            <form onSubmit={this.postData} onSubmit={()=>{this.setState({i:1})}}>
+            <form onSubmit={this.postData}>
               <div className="dashed_upload"></div>
               <label>Alpha:</label>
               <input className="form-control" type="text" />
