@@ -1,4 +1,4 @@
-# Data Structures II Project : K-D Trees
+# [!Project Logo Here](https://raw.githubusercontent.com/hsntrq/CMFDKDTrees/master/public/favicon.ico) Data Structures II Project : K-D Trees
 ## Introduction to K-Dimensional Trees:
 ---
 A K-Dimensional Tree is a binary search tree where data in each node is a K-Dimensional point in space.
@@ -9,11 +9,26 @@ The subdivision consists of rectangular regions, called cells (possibly unbounde
 
 <p style = "text-align:center;">
 
-<img src="Documentation_img/KD.png">
+<img src="Documentation_Img/KD.png">
 
 Source : [KD Tree Visualization](https://www.researchgate.net/figure/Visualization-of-the-k-d-tree-algorithm_fig4_327289160)
 
 </p>
+
+### *Instructions to Run Application*
+
+To run the Web Application on your local server, clone the repository on your machine and run the following commands in the root location of the repository.
+
+```bash
+pip install virtualenv
+virtualenv env
+.\\env\\Scripts\activate
+pip install -r requirements.txt
+npm i
+npm run build
+python manage.py migrate
+python manage.py runserver
+```
 
 ### *Complexity Analysis*
 
@@ -29,7 +44,7 @@ To get balanced trees, use the median coordinate for splitting - median itself c
 <!-- Alignment options!!!!! -->
 <p style = "text-align:center;">
 
-<img  width="350" height="350" src="Documentation_img/NN.png">
+<img  width="350" height="350" src="Documentation_Img/NN.png">
 
 
 Source : [Nearest Neighbour Search using KD-Tree](https://kanoki.org/2020/08/05/find-nearest-neighbor-using-kd-tree/)
@@ -48,7 +63,7 @@ The primary algorithm for this problem has been adapted from the paper "A Fast a
 
 <p style = "text-align:center;">
 
-<img src="Documentation_img/Algorithm.png">
+<img src="Documentation_Img/Algorithm.png">
 
 Source : [Nearest Neighbour Search using KD-Tree](https://kanoki.org/2020/08/05/find-nearest-neighbor-using-kd-tree/)
 
@@ -69,11 +84,11 @@ Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
 
 <p style = "text-align:center;">
 
-<img src="Documentation_img/16.jpg" width ="200" height ="120"/><img src="Documentation_img/16-truth.png" width ="200" height ="120"/>
+<img src="Documentation_Img/16.jpg" width ="200" height ="120"/><img src="Documentation_Img/16-truth.png" width ="200" height ="120"/>
 
 <br/>
 
-<img src="Documentation_img/29.jpeg" width ="200" height ="120"/><img src="Documentation_img/29-truth-2.jpeg" width ="200" height ="120"/>
+<img src="Documentation_Img/29.jpeg" width ="200" height ="120"/><img src="Documentation_Img/29-truth-2.jpeg" width ="200" height ="120"/>
 
 </p>
 
@@ -89,3 +104,5 @@ MathArt and GGplot library of R programming language have been used to generate 
 
 There are two images of Rapidly-exploring random trees which are extension of KD-Trees since they are two dimensional but their construction is completely randomized and different.  RRT grows a tree rooted at the starting configuration by using random samples from the search space. As each sample is drawn, a connection is attempted between it and the nearest state in the tree. The built in functions of mathArt library nearly accomplish all of that by generating the search space. The images featured in blue are examples of RRT Art.
 <br/>References: https://towardsdatascience.com/getting-started-with-generative-art-in-r-3bc50067d34b
+
+![Project Logo](https://raw.githubusercontent.com/hsntrq/CMFDKDTrees/master/public/assets/img/us.jpeg)
