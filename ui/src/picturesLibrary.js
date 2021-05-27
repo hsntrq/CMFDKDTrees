@@ -8,7 +8,7 @@ export default class PicturesLibrary extends Component {
         <section className="portfolio-block projects-cards">
             <div className="container">
                 <div className="heading">
-                    <h2>Pictures with There Forgery Detected Outputs</h2>
+                    <h2>Pictures with their Forgery Detected Outputs</h2>
                 </div>
                 <div className="row">
                     <div className="col-sm-12 col-lg-6">

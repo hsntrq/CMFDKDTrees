@@ -1,8 +1,18 @@
 .gradient{
-    background: linear-gradient(120deg,#832ef3,#ffe70e);
+    background: linear-gradient(120deg,#832ef3,goldenrod);
     background-color: rgba(0, 0, 0, 0);
     color: #fff;
 }
 .active{
     text-decoration: underline;
+}
+.btn{
+    color: #fff;
+    background-color: #832ef3;
+    border-color:#832ef3;
+
+}
+.btn:hover{
+    background-color: goldenrod;
+    border-color: goldenrod;
 }

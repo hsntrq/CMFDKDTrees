@@ -13,7 +13,7 @@ export default class Home extends Component {
               <h1 className="hero-title">KD Trees</h1>
               <p className="hero-subtitle">
                 <i>“The purpose of software engineering is to control complexity,
-                not to create it.”</i> ― Jon L. Bentley, Inventor of KD-Trees
+                not to create it.”</i> <br/>Jon L. Bentley, Inventor of KD-Trees
               </p>
               <p></p>
               <a className="btn btn-primary" role="button" href="/visualize">
@@ -24,10 +24,9 @@ export default class Home extends Component {
           <section className="portfolio-block website">
             <div
               className="container"
-              style={{ background: "rgba(52,58,64,0.67)" }}
             >
               <div className="heading">
-                <h2 style={{ borderColor: "#000000" }}>
+                <h2>
                   Copy Move Forgery Detection
                 </h2>
               </div>
@@ -46,7 +45,7 @@ export default class Home extends Component {
                           <a href="#">
                             <img
                               className="card-img-top scale-on-hover"
-                              src="assets/img/nature/image1.jpg"
+                              src="assets/img/1.png"
                               alt="Card Image"
                             />
                           </a>
@@ -55,7 +54,7 @@ export default class Home extends Component {
                           <a href="#">
                             <img
                               className="card-img-top scale-on-hover"
-                              src="assets/img/nature/image1.jpg"
+                              src="assets/img/2.png"
                               alt="Card Image"
                             />
                           </a>
@@ -105,7 +104,7 @@ export default class Home extends Component {
           >
             <div className="container">
               <div className="heading">
-                <h2>Pictures with There Forgery Detected Outputs</h2>
+                <h2>Pictures with their Forgery Detected Outputs</h2>
               </div>
               <div>
                 <p>

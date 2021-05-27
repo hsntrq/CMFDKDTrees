@@ -19,9 +19,8 @@ export default class About extends Component {
                     <div className="card-body">
                       <h3 className="card-title">Fizza Rubab</h3>
                       <p className="card-text">
-                        Nullam id dolor id nibh ultricies vehicula ut id elit.
-                        Cras justo odio, dapibus ac facilisis in, egestas eget
-                        quam. Donec id elit non mi porta gravida at eget metus.
+                        Algorithm Implementation <br/> Generative Art
+
                       </p>
                     </div>
                   </div>
@@ -34,9 +33,7 @@ export default class About extends Component {
                     <div className="card-body">
                       <h3 className="card-title">Mohammad Hasan Tariq</h3>
                       <p className="card-text">
-                        Nullam id dolor id nibh ultricies vehicula ut id elit.
-                        Cras justo odio, dapibus ac facilisis in, egestas eget
-                        quam. Donec id elit non mi porta gravida at eget metus.
+                        GUI Server Implementation<br/> Backend management
                       </p>
                     </div>
                   </div>
@@ -49,9 +46,7 @@ export default class About extends Component {
                     <div className="card-body">
                       <h3 className="card-title">Muhammad Aqib Khan</h3>
                       <p className="card-text">
-                        Nullam id dolor id nibh ultricies vehicula ut id elit.
-                        Cras justo odio, dapibus ac facilisis in, egestas eget
-                        quam. Donec id elit non mi porta gravida at eget metus.
+                        Front-end Handling<br/> Image Handling
                       </p>
                     </div>
                   </div>
@@ -66,9 +61,7 @@ export default class About extends Component {
                     <div className="card-body">
                       <h3 className="card-title">Ruhama Naeem</h3>
                       <p className="card-text">
-                        Nullam id dolor id nibh ultricies vehicula ut id elit.
-                        Cras justo odio, dapibus ac facilisis in, egestas eget
-                        quam. Donec id elit non mi porta gravida at eget metus.
+                        Algorithm Implementation<br/> Image Handling
                       </p>
                     </div>
                   </div>
@@ -81,9 +74,7 @@ export default class About extends Component {
                     <div className="card-body">
                       <h3 className="card-title">Sameer Pervez</h3>
                       <p className="card-text">
-                        Nullam id dolor id nibh ultricies vehicula ut id elit.
-                        Cras justo odio, dapibus ac facilisis in, egestas eget
-                        quam. Donec id elit non mi porta gravida at eget metus.
+                        Algorithm Implementation<br/> Presentation Building
                       </p>
                     </div>
                   </div>

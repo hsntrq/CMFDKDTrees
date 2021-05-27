@@ -22,13 +22,18 @@ export default class Visualize extends Component {
               <p>
                 To get balanced trees, use the median coordinate for splitting -
                 median itself can be put in either half or Presort points by x
-                and y-coordinates, and cross-link these two sorted lists With
+                and y-coordinates, and cross-link these two sorted lists. <br/> With
                 median splitting, the height of the tree guaranteed to be O(log
-                n). Inserting a new point into a balanced k-d tree takes O(log
-                n) time. Removing a point from a balanced k-d tree takes O(log
-                n) time. Finding 1 nearest neighbor in a balanced k-d tree with
+                n). 
+                <br/>Inserting a new point into a balanced k-d tree takes O(log
+                n) time. 
+                <br/>Removing a point from a balanced k-d tree takes O(log
+                n) time. 
+                <br/>Finding 1 nearest neighbor in a balanced k-d tree with
                 randomly distributed points takes O(log n) time on average.
               </p>
+              <img src ="/assets/img/KDtree2.png" />
+              <img src ="/assets/img/KDtree.png" />
             </div>
           </section>
         </main>
