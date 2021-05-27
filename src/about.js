@@ -8,7 +8,8 @@ export default class About extends Component {
           <section className="portfolio-block hire-me">
             <div className="container">
               <div className="heading">
-                <h2>About Us</h2>
+                <img src="assets/img/us.jpeg" style={{height:  "200px", margin:"21px"}}/>
+                <h2>Division of Labour</h2>
               </div>
               <div className="row">
                 <div className="col-auto col-md-4">
