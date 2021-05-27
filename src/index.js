@@ -1,5 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import './assets/bootstrap/css/bootstrap.min.css'
+import './assets/fonts/font-awesome.min.css';
+import './assets/fonts/ionicons.min.css';
+import './assets/css/Drag--Drop-Upload-Form.css';
+import './assets/css/Paralax-Hero-Banner.css';
+import './assets/css/Paralax-Hero-Banner-1.css';
+import './assets/css/style.css';
 
 import Home from "./home";
 import Header from "./header";
