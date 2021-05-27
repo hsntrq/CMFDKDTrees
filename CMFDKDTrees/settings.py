@@ -105,6 +105,8 @@ USE_L10N = True
 USE_TZ = True
 
 
+import mimetypes
+mimetypes.add_type("text/css", ".css", True)
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
@@ -135,6 +137,3 @@ CORS_ORIGIN_WHITELIST = (
 CSRF_COOKIE_NAME = "csrftoken"
 
 SITE_ID = 1
-
-import mimetypes
-mimetypes.add_type("text/css", ".css", True)
