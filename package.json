@@ -1,0 +1,21 @@
+{
+  "name": "ui",
+  "version": "1.0.0",
+  "description": "---\r A K-Dimensional Tree is a binary search tree where data in each node is a K-Dimensional point in space.",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hsntrq/CMFDKDTrees.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hsntrq/CMFDKDTrees/issues"
+  },
+  "homepage": "https://github.com/hsntrq/CMFDKDTrees#readme"
+}
