@@ -135,3 +135,6 @@ CORS_ORIGIN_WHITELIST = (
 CSRF_COOKIE_NAME = "csrftoken"
 
 SITE_ID = 1
+
+import mimetypes
+mimetypes.add_type("text/css", ".css", True)
