@@ -4,7 +4,7 @@ export default class Header extends Component {
   render() {
     return (<div>
       <nav className="navbar navbar-dark navbar-expand-lg fixed-top bg-white portfolio-navbar gradient">
-        <div className="container"><a className="navbar-brand logo" href="/">{'Siblings Function'}</a>
+        <div className="container"><img style={{height:"35px"}} src="/favicon.ico"/><a className="navbar-brand logo" href="/">{'Siblings Function'}</a>
             <nav className="navbar navbar-light navbar-expand-md">
                 <div className="container-fluid"><button data-toggle="collapse" className="navbar-toggler" data-target="#navbarNav"><span className="sr-only">Toggle navigation</span><span className="navbar-toggler-icon"></span></button></div>
             </nav>
