@@ -261,7 +261,7 @@ export default class Home extends Component {
                     className="btn btn-primary btn-lg"
                     role="button"
                     style={{ margin: "20px" }}
-                    href="/generativeArt"
+                    href="/art"
                   >
                     View more
                   </a>

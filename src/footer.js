@@ -4,8 +4,7 @@ export default class Footer extends Component {
   render() {
     return (<>
       <footer className="page-footer">
-        <div className="container">
-            <div className="links"><a href="#">About Us</a></div>
+        <div className="container" style={{margin:"5% auto auto"}}>
             <div className="social-icons"><a href="https://github.com/hsntrq/CMFDKDTrees"><i className="icon ion-social-github"></i></a><a href="#"><i className="icon ion-social-youtube"></i></a></div>
         </div>
     </footer>   
