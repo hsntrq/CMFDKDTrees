@@ -1,7 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
+import React, {Component} from 'react';
 
-function App() {
+export default class App extends Component{
+  render (){
   return (
     <div className="App">
       <header className="App-header">
@@ -11,8 +13,7 @@ function App() {
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
+          href=""
           rel="noopener noreferrer"
         >
           Learn React
@@ -20,6 +21,5 @@ function App() {
       </header>
     </div>
   );
+  }
 }
-
-export default App;
