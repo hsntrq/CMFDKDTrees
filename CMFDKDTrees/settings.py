@@ -14,7 +14,7 @@ SECRET_KEY = 'django-insecure-e5@vh#3t%iz8c_(c_ok7#5fg&2!40vr-8q1rxuz9&44g*3kd44
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['sibblingsfunction.herokuapp.com']
+ALLOWED_HOSTS = ['sibblingsfunction.herokuapp.com', 'localhost']
 
 
 # Application definition
