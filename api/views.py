@@ -8,11 +8,7 @@ class EntriesView(views.APIView):
         serializer = serializers.EntryListSerializer(entryList, many=True)
         return response.Response(serializer.data)
 
+
 class CreateEntry(generics.CreateAPIView):
     queryset = models.Entry.objects.all()
     serializer_class = serializers.CreateEntrySerializer
-
-# class CreateEntry(views.APIView):
-#     def post(self, request):
-#         pass
-#     serializer_class = serializers.EntryListSerializer

@@ -18,6 +18,7 @@ class CreateEntrySerializer(serializers.ModelSerializer):
         model = models.Entry
         fields = [
             'imageInput',
+            'imageOutput',
             'alpha',
             'blockSize',
             'tm'

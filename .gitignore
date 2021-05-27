@@ -139,3 +139,5 @@ cython_debug/
 
 .vscode
 _pycache_
+
+node_modules
