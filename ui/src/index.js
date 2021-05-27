@@ -1,18 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import App from "./App";
 import Home from "./home";
 import Header from "./header";
 import Footer from "./footer";
 import About from "./about";
 import Cmfd from "./cmfd";
-
-import reportWebVitals from "./reportWebVitals";
-import { Route, Switch, Redirect, BrowserRouter } from "react-router-dom";
 import PicturesLibrary from "./picturesLibrary";
 import GenerativeArt from "./generativeArt";
-import Visualize from "./visualize";
+import KDTree from "./kdtree";
+import reportWebVitals from "./reportWebVitals";
+import { Route, Switch, Redirect, BrowserRouter } from "react-router-dom";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -24,15 +22,8 @@ ReactDOM.render(
         <Route exact path="/about" component={About} />
         <Route exact path="/cmfd" component={Cmfd} />
         <Route exact path="/art" component={GenerativeArt} />
-        <Route exact path="/visualize" component={Visualize} />
+        <Route exact path="/kdtrees" component={KDTree} />
         <Route exact path="/pictures" component={PicturesLibrary} />
-        {/* <Route
-          exact
-          path="/"
-          render={() => {
-            return <Redirect to="/about" />;
-          }}
-        /> */}
       </Switch>
       <Footer />
     </BrowserRouter>

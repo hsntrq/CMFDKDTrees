@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-export default class Visualize extends Component {
+export default class KDTree extends Component {
   render() {
     return (
       <div>

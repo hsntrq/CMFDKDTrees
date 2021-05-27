@@ -10,7 +10,7 @@ export default class Header extends Component {
             </nav>
             <div className="collapse navbar-collapse" id="navbarNav">
                 <ul className="navbar-nav ml-auto">
-                <li className="nav-item"><a className={(window.location.href.search("/visualize")!=-1 && "active")+" nav-link"} href="/visualize">KD Trees</a></li>
+                <li className="nav-item"><a className={(window.location.href.search("/kdtrees")!=-1 && "active")+" nav-link"} href="/kdtrees">KD Trees</a></li>
                     <li className="nav-item"><a className={(window.location.href.search("/cmfd")!=-1 && "active")+" nav-link"} href="/cmfd">Copy Move Forgery Detection</a></li>
                     <li className="nav-item"><a className={(window.location.href.search("/pictures")!=-1 && "active")+" nav-link"} href="/pictures">Pictures Library</a></li>
                     <li className="nav-item"><a className={(window.location.href.search("/art")!=-1 && "active")+" nav-link"} href="/art">Generative Art</a></li>

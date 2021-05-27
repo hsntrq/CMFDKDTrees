@@ -16,7 +16,7 @@ export default class Home extends Component {
                 not to create it.”</i> <br/>Jon L. Bentley, Inventor of KD-Trees
               </p>
               <p></p>
-              <a className="btn btn-primary" role="button" href="/visualize">
+              <a className="btn btn-primary" role="button" href="/kdtrees">
                 Learn More
               </a>
             </div>
