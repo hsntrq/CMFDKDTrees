@@ -1,4 +1,4 @@
-# [!Project Logo Here](https://raw.githubusercontent.com/hsntrq/CMFDKDTrees/master/public/assets/img/logo.png) Data Structures II Project : K-D Trees
+# ![Project Logo Here](https://raw.githubusercontent.com/hsntrq/CMFDKDTrees/master/public/assets/img/logo.png) Data Structures II Project : K-D Trees
 ## Introduction to K-Dimensional Trees:
 ---
 A K-Dimensional Tree is a binary search tree where data in each node is a K-Dimensional point in space.
