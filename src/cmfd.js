@@ -31,7 +31,7 @@ export default class Cmfd extends Component {
         e.preventDefault();
         const data = new FormData(e.target);
         console.log("error!");
-        fetch("http://127.0.0.1:8000/api/submit/", {
+        fetch("/api/submit/", {
           method: "POST",
           body: data,
           encType: "multipart/form-data",
@@ -57,7 +57,7 @@ export default class Cmfd extends Component {
         </p>
         <div className="row gallery">
           <div className="col" style={{ margin: "0 10%" }}>
-            <form onSubmit={this.postData}>
+            <form onSubmit={()=>{this.setState({i:1})}}>
               <div className="dashed_upload"></div>
               <label>Alpha:</label>
               <input className="form-control" type="text" />
@@ -93,7 +93,7 @@ export default class Cmfd extends Component {
               <div className="drop">
                 <div className="cont">
                   <i className="fa fa-upload"></i>
-                  <div className="tit">Drag & Drop</div>
+                  <div className="tit">{'Drag & Drop'}</div>
                   <div className="desc">or</div>
                   <div className="browse">click here to browse</div>
                 </div>

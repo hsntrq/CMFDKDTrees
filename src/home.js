@@ -127,7 +127,7 @@ export default class Home extends Component {
                           <a href="#">
                             <img
                               className="card-img-top scale-on-hover"
-                              src="assets/img/nature/image1.jpg"
+                              src="assets/img/nature/1.jpeg"
                               alt="Card Image"
                             />
                           </a>
@@ -136,7 +136,7 @@ export default class Home extends Component {
                           <a href="#">
                             <img
                               className="card-img-top scale-on-hover"
-                              src="assets/img/nature/image1.jpg"
+                              src="assets/img/nature/1a.jpeg"
                               alt="Card Image"
                             />
                           </a>
@@ -160,7 +160,7 @@ export default class Home extends Component {
                           <a href="#">
                             <img
                               className="card-img-top scale-on-hover"
-                              src="assets/img/nature/image1.jpg"
+                              src="assets/img/nature/3.jpeg"
                               alt="Card Image"
                             />
                           </a>
@@ -169,7 +169,7 @@ export default class Home extends Component {
                           <a href="#">
                             <img
                               className="card-img-top scale-on-hover"
-                              src="assets/img/nature/image1.jpg"
+                              src="assets/img/nature/3a.jpeg"
                               alt="Card Image"
                             />
                           </a>
