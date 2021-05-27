@@ -1,4 +1,4 @@
-# [!Project Logo Here](https://raw.githubusercontent.com/hsntrq/CMFDKDTrees/master/public/favicon.ico) Data Structures II Project : K-D Trees
+# [!Project Logo Here](https://raw.githubusercontent.com/hsntrq/CMFDKDTrees/master/public/assets/img/logo.png) Data Structures II Project : K-D Trees
 ## Introduction to K-Dimensional Trees:
 ---
 A K-Dimensional Tree is a binary search tree where data in each node is a K-Dimensional point in space.
@@ -15,14 +15,14 @@ Source : [KD Tree Visualization](https://www.researchgate.net/figure/Visualizati
 
 </p>
 
-### *Instructions to Run Application*
+## Instructions to Run Application
 
 To run the Web Application on your local server, clone the repository on your machine and run the following commands in the root location of the repository.
 
 ```bash
 pip install virtualenv
 virtualenv env
-.\\env\\Scripts\activate
+.\env\Scripts\activate
 pip install -r requirements.txt
 npm i
 npm run build
