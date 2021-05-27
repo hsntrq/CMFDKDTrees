@@ -121,6 +121,32 @@ KD Art  |  Collection
 ![](Documentation_Img/Generative_Art_4.jpeg)  |  ![](Documentation_Img/ellipse.jpeg)
 ![](Documentation_Img/Generative_Art_10.jpeg)  |  ![]()
 
+
+R Code Snippet
+
+```R
+library(mathart)
+library(ggforce)
+library(Rcpp)
+library(tidyverse)
+t <- 2*pi*runif(800)
+x <- 6000*cos(t -2000)
+y <- 4000*sin(t)
+points <- data.frame(x, y)
+print(points)
+result <- kdtree(points)
+
+p <- ggplot() +
+  geom_segment(aes(x, y, xend = xend, yend = yend), result, linetype=13, lineend = "round", size = 3, colour ="firebrick4") +
+  coord_equal() + 
+  xlim(-7000, 7000) + ylim(-7000, 7000) +
+  theme_blankcanvas(margin_cm = 0, bg_col ="ivory")
+
+ggsave("kdtree2.png", p, width = 17, height = 17, units = "in")
+
+
+```
+
 In the images below, are that of a Rapidly Exploring Tree mentioned above. Code reference is stated above.
 KD Art            |  Premium Images
 :-----------------:|:-------------:
