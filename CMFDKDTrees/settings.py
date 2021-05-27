@@ -27,6 +27,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'api.apps.ApiConfig',
+    'frontend.apps.FrontendConfig',
     'rest_framework',
 ]
 
@@ -45,7 +46,7 @@ ROOT_URLCONF = 'CMFDKDTrees.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'build')],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -113,10 +114,8 @@ mimetypes.add_type("text/css", ".css", True)
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, "static")
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'build/static'),
+    os.path.join(BASE_DIR, 'frontend/static'),
 ]
-
-STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
@@ -127,6 +126,12 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': (
+        'rest_framework.permissions.AllowAny',
+    ),
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework.authentication.TokenAuthentication',
+    ),
     'COERCE_DECIMAL_TO_STRING': False,
 }
 
