@@ -45,7 +45,7 @@ export default class Home extends Component {
                           <a href="#">
                             <img
                               className="card-img-top scale-on-hover"
-                              src="/static/assets/img/1.png"
+                              src="/static/assets/img/1.PNG"
                               alt="Card Image"
                             />
                           </a>
@@ -54,7 +54,7 @@ export default class Home extends Component {
                           <a href="#">
                             <img
                               className="card-img-top scale-on-hover"
-                              src="/static/assets/img/2.png"
+                              src="/static/assets/img/2.PNG"
                               alt="Card Image"
                             />
                           </a>
