@@ -15,7 +15,7 @@ export default class About extends Component {
                 <div className="col-auto col-md-4">
                   <div className="card special-skill-item border-0">
                     <div className="card-header bg-transparent border-0">
-                      <i className="icon ion-ios-star-outline"></i>
+                      <i className="icon ion-ios-star"></i>
                     </div>
                     <div className="card-body">
                       <h3 className="card-title">Fizza Rubab</h3>
@@ -29,7 +29,7 @@ export default class About extends Component {
                 <div className="col-md-4">
                   <div className="card special-skill-item border-0">
                     <div className="card-header bg-transparent border-0">
-                      <i className="icon ion-ios-star-outline"></i>
+                      <i className="icon ion-trophy"></i>
                     </div>
                     <div className="card-body">
                       <h3 className="card-title">Mohammad Hasan Tariq</h3>
@@ -42,7 +42,7 @@ export default class About extends Component {
                 <div className="col-md-4">
                   <div className="card special-skill-item border-0">
                     <div className="card-header bg-transparent border-0">
-                      <i className="icon ion-ios-star-outline"></i>
+                      <i className="icon ion-ios-star"></i>
                     </div>
                     <div className="card-body">
                       <h3 className="card-title">Muhammad Aqib Khan</h3>
@@ -57,7 +57,7 @@ export default class About extends Component {
                 <div className="col-md-4">
                   <div className="card special-skill-item border-0">
                     <div className="card-header bg-transparent border-0">
-                      <i className="icon ion-ios-star-outline"></i>
+                      <i className="icon ion-ios-star"></i>
                     </div>
                     <div className="card-body">
                       <h3 className="card-title">Ruhama Naeem</h3>
@@ -70,7 +70,7 @@ export default class About extends Component {
                 <div className="col-md-4">
                   <div className="card special-skill-item border-0">
                     <div className="card-header bg-transparent border-0">
-                      <i className="icon ion-ios-star-outline"></i>
+                      <i className="icon ion-ios-star"></i>
                     </div>
                     <div className="card-body">
                       <h3 className="card-title">Sameer Pervez</h3>
