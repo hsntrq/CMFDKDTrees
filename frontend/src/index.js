@@ -8,7 +8,6 @@ import Cmfd from "./cmfd";
 import PicturesLibrary from "./picturesLibrary";
 import GenerativeArt from "./generativeArt";
 import KDTree from "./kdtree";
-import reportWebVitals from "./reportWebVitals";
 import { Route, Switch, Redirect, BrowserRouter } from "react-router-dom";
 
 ReactDOM.render(
@@ -28,7 +27,3 @@ ReactDOM.render(
   document.getElementById("root")
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
