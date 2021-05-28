@@ -1,25 +1,28 @@
-.gradient{
-    background: linear-gradient(120deg,#832ef3,goldenrod);
-    background-color: rgba(0, 0, 0, 0);
-    color: #fff;
+.gradient {
+  background: linear-gradient(120deg, #832ef3, goldenrod);
+  background-color: rgba(0, 0, 0, 0);
+  color: #fff;
 }
-.active{
-    text-decoration: underline;
+.active {
+  text-decoration: underline;
 }
-.btn{
-    color: #fff;
-    background-color: #832ef3;
-    border-color:#832ef3;
-
+.btn {
+  color: #fff;
+  background-color: #832ef3;
+  border-color: #832ef3;
 }
-.btn:hover{
-    background-color: goldenrod;
-    border-color: goldenrod;
+.btn:hover {
+  background-color: goldenrod;
+  border-color: goldenrod;
 }
 .btn:focus {
-    box-shadow: 0 0 0 .2rem #832ef3 !important;
+  box-shadow: 0 0 0 0.2rem #832ef3 !important;
 }
-.btn:active{
-    background-color: goldenrod !important;
-    border-color: goldenrod !important;
+.btn:active {
+  background-color: goldenrod !important;
+  border-color: goldenrod !important;
+}
+.special-skill-item .icon {
+  background-color: #832ef3;
+  color: gold;
 }
