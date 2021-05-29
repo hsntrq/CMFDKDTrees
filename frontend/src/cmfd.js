@@ -135,7 +135,7 @@ export default class Cmfd extends Component {
               </div>
             )}
             {this.state.i == 1 && <Submit />}
-            {this.state.i == 2 && <Output entry={this.state.entry} />}
+            {(this.state.i == 2 && this.state.entry) && <Output entry={this.state.entry} />}
           </section>
         </main>
       </div>
@@ -183,7 +183,7 @@ const Output = ({entry}) => {
             <div className="card-body">
               <h6>Input and Output Image of Forgery Detection</h6>
               <p className="text-muted card-text">
-                For this image, alpha = 10, blocksize = 9, tm = 0.001
+                For this image, alpha = {entry.alpha}, blocksize = {entry.blockSize}, tm = {entry.tm}
               </p>
               <div className="row">
                 <div className="col-6">
